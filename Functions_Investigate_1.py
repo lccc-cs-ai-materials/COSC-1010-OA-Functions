@@ -9,15 +9,25 @@ Answer the following questions in your own words:
 
 1. What is the purpose of the `get_radius_from_user()` function? What value
    does it `return`?
+The purpose of the "get_radius_from_user()" function is to prompt the user to input a radius value then convert
+the input into a float. The the float value is the radius the user types.
 
 2. What is the purpose of the `calculate_area(radius)` function? What is the
    `radius` variable in this function called (an argument or a parameter)?
+The purpose of the "calculate area(radius)" function is to compute the area of a circle using the basic formula pi x radius squared.
+The radius variable is a parameter.
 
 3. In the main part of the program, a variable named `user_radius` is created.
    How is its value used in the call to `calculate_area`?
+The value of "user_radius" is created and used in the call to "calculate area" in the "calculate area(radius)" function.
 
 4. Trace the flow of the program. Which function is called first? After that
    function finishes, what happens next?
+   1. The first function that is called is "get_radius_from_user()", and after it is called upon it prints a greeting which
+   calls for the users input, converts it to a float, then returns the value
+   2. Next, the returned value is assigned to the variable user_radius
+   3."calculate area(radius)" function is called, passing the stored radius into an argument
+   4. the calculate_area function is then called computed and printed, then the program ends.
 """
 
 import math # We need this for the value of pi
